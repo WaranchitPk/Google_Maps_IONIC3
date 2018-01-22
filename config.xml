@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.t.maps" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>maps</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -81,4 +81,12 @@
     <plugin name="cordova-plugin-device" spec="1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.11" />
+    <engine name="ios" spec="~4.5.4" />
+    <engine name="browser" spec="~5.0.3" />
+    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDdsqCmkn09-8s1T3Qxu3wg0wH4050rU00" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyAbShO4_1Gm_LcS3seQTl3PE5bpcqM638U" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
+    </plugin>
 </widget>
